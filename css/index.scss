@@ -70,7 +70,7 @@ nav {
 section.discover {
     display: flex;
     align-items: center;
-    gap: 4em;
+    gap: 3em;
 
     .info {
         width: 48%;
@@ -86,40 +86,41 @@ section.discover {
             width: 51%;
             margin-bottom: 4em;
         }
+    }
+}
 
-        .cta {
-            display: flex;
-            gap: 1em;
+.cta {
+    display: flex;
+    gap: 1em;
+}
 
-            .fill-button {
-                @extend .button;
-                background: #8d8edb;
+.fill-button {
+    @extend .button;
+    background: #8d8edb;
 
-                &:hover {
-                    background: #4f53b9;
-                }
-            }
+    &:hover {
+        background: #4f53b9;
+    }
+}
 
-            .nofill-button {
-                @extend .button;
-                border: 1px solid #a3d7d7;
+.nofill-button {
+    @extend .button;
+    border: 1px solid #a3d7d7;
 
-                &:hover {
-                    background: #4f53b9;
-                }
-            }
-        }
+    &:hover {
+        background: #4f53b9;
     }
 }
 
 section.featured-on {
     margin-top: 6em;
-    h2 {
-        color: white;
-        font-family: "Outfit", sans-serif;
-        font-weight: 300;
-        text-transform: uppercase;
-    }
+}
+
+.subheading {
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 .logo-box {
@@ -132,6 +133,37 @@ section.featured-on {
     padding: 0 1.5em 0 1.5em;
     border-radius: 0.5em;
     img {
-        width: 10%  ;   
+        width: 15%;
+    }
+
+    margin-bottom: 6em;
+}
+
+.feature {
+    display: grid;
+    align-items: center;
+    gap: 3em;
+    grid-template-columns: auto auto;
+    margin-bottom: 4em;
+
+    h2 {
+        font-size: 4.1em;
+        text-transform: capitalize;
+        line-height: 1.3em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    p {
+        line-height: 1.5em;
+        margin-bottom: 3em;
+    }
+}
+
+.feature.left {
+    grid-template-areas:"left right";
+
+    img {
+        grid-area: right;
     }
 }

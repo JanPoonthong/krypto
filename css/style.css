@@ -49,7 +49,7 @@ nav ul li:hover {
   filter: blur(250px);
 }
 
-.button, section.discover .info .cta .nofill-button, section.discover .info .cta .fill-button {
+.button, .nofill-button, .fill-button {
   border-radius: 3em;
   text-transform: uppercase;
   color: white;
@@ -65,7 +65,7 @@ nav ul li:hover {
 section.discover {
   display: flex;
   align-items: center;
-  gap: 4em;
+  gap: 3em;
 }
 section.discover .info {
   width: 48%;
@@ -80,27 +80,31 @@ section.discover .info p {
   width: 51%;
   margin-bottom: 4em;
 }
-section.discover .info .cta {
+
+.cta {
   display: flex;
   gap: 1em;
 }
-section.discover .info .cta .fill-button {
+
+.fill-button {
   background: #8d8edb;
 }
-section.discover .info .cta .fill-button:hover {
+.fill-button:hover {
   background: #4f53b9;
 }
-section.discover .info .cta .nofill-button {
+
+.nofill-button {
   border: 1px solid #a3d7d7;
 }
-section.discover .info .cta .nofill-button:hover {
+.nofill-button:hover {
   background: #4f53b9;
 }
 
 section.featured-on {
   margin-top: 6em;
 }
-section.featured-on h2 {
+
+.subheading {
   color: white;
   font-family: "Outfit", sans-serif;
   font-weight: 300;
@@ -116,9 +120,36 @@ section.featured-on h2 {
   height: 7em;
   padding: 0 1.5em 0 1.5em;
   border-radius: 0.5em;
+  margin-bottom: 6em;
 }
 .logo-box img {
-  width: 10%;
+  width: 15%;
+}
+
+.feature {
+  display: grid;
+  align-items: center;
+  gap: 3em;
+  grid-template-columns: auto auto;
+  margin-bottom: 4em;
+}
+.feature h2 {
+  font-size: 4.1em;
+  text-transform: capitalize;
+  line-height: 1.3em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.feature p {
+  line-height: 1.5em;
+  margin-bottom: 3em;
+}
+
+.feature.left {
+  grid-template-areas: "left right";
+}
+.feature.left img {
+  grid-area: right;
 }
 
 /*# sourceMappingURL=style.css.map */
